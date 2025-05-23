@@ -1,0 +1,29 @@
+{
+    "dataset": "ImageNet-A",
+
+    "shuffle": true,
+    "seed": [1993],
+    "device": "cuda",
+    "test_on_train_loader": 1,
+
+    "init_cls": 20,
+    "increment": 20,
+    "batch_size": 32,
+
+    "model_name": "ncmlosscil",
+    "pretrained_model": "vit_base_patch16_224_in21k",
+    "VPT_type": "Deep",
+
+    "n_clusters": 1,
+    "n_epochs": 4,
+    "lr": 1e-2,
+
+    "merge_epoch": [4, 4, 4, 4, 2, 2, 2, 2, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 1],
+
+    "Prompt_Token_num": 10,
+    "tuned_epoch": 2,
+    "lr_prompt": [1.0e-3, 5.0e-5, 1.0e-4, 1.0e-4, 1.0e-5, 1.0e-5, 2.0e-6, 2.0e-6, 5.0e-7, 5.0e-7, 1.0e-7, 1.0e-7],
+    "lr_final": 2.0e-7,
+
+    "task_stop_p_drift": 9
+}

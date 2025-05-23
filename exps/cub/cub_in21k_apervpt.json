@@ -1,0 +1,22 @@
+{
+    "dataset": "cub",
+
+    "shuffle": true,
+    "seed": [1993],
+    "device": "cuda",
+    "test_on_train_loader": 1,
+
+    "init_cls": 2,
+    "increment": 2,
+
+    "model_name": "apervpt",
+    "pretrained_model": "vit_base_patch16_224_in21k",
+    "VPT_type": "Shallow",
+
+    "n_clusters": 1,
+    "n_epochs": 4,
+    "lr": 1e1,
+
+    "Prompt_Token_num": 5,
+    "tuned_epoch": 20
+}

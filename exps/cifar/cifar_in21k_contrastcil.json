@@ -1,0 +1,23 @@
+{
+    "dataset": "cifar224",
+
+    "shuffle": true,
+    "seed": [1993],
+    "device": "cuda",
+    "test_on_train_loader": 1,
+
+    "init_cls": 2,
+    "increment": 2,
+
+    "model_name": "contrastcil",
+    "pretrained_model": "vit_base_patch16_224_in21k",
+    "VPT_type": "Shallow",
+
+    "n_clusters": 1,
+    "n_epochs": 4,
+    "lr": 1e0,
+
+    "Prompt_Token_num": 1,
+    "tuned_epoch": 5,
+    "lr_prompt": 5.0e-5
+}

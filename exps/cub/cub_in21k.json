@@ -1,0 +1,18 @@
+{
+    "dataset": "cub",
+
+    "shuffle": true,
+    "seed": [1993],
+    "device": "cuda",
+    "test_on_train_loader": 0,
+
+    "init_cls": 10,
+    "increment": 10,
+
+    "model_name": "gdprotoscil",
+    "pretrained_model": "vit_base_patch16_224_in21k",
+
+    "n_clusters": 1,
+    "n_epochs": 4,
+    "lr": 1e1
+}

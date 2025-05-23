@@ -1,0 +1,18 @@
+{
+    "dataset": "cifar224",
+
+    "shuffle": true,
+    "seed": [1993],
+    "device": "cuda",
+    "test_on_train_loader": 0,
+
+    "init_cls": 5,
+    "increment": 5,
+
+    "model_name": "simplecil",
+    "pretrained_model": "vit_base_patch16_224_in21k",
+
+    "n_clusters": 100,
+    "n_epochs": 4,
+    "lr": 5e1
+}
